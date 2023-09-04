@@ -13,7 +13,7 @@ Contract.make {
         }
     }
     response {
-        body(7)
+        body("7")
         status 200
     }
 }

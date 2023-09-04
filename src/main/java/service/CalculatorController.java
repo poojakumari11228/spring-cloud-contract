@@ -8,8 +8,8 @@ import org.springframework.web.bind.annotation.RestController;
 public class CalculatorController {
 
     @GetMapping("/add")
-    public int add(@RequestParam("value1") int value1, @RequestParam("value2") int value2) {
-        return value1 + value2;
+    public String add(@RequestParam("value1") int value1, @RequestParam("value2") int value2) {
+        return String.valueOf(value1 + value2);
     }
 
     @GetMapping("/double")
