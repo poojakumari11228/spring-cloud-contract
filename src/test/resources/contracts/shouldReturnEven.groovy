@@ -1,3 +1,5 @@
+package contracts
+
 import org.springframework.cloud.contract.spec.Contract
 Contract.make {
 	description "should return even when number input is even"
@@ -5,7 +7,8 @@ Contract.make {
 		method GET()
 		url("/validate") {
 			queryParameters {
-				parameter("number", "2")
+				parameter("number1", "2")
+				parameter("number2", "2")
 			}
 		}
 	}

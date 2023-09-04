@@ -1,3 +1,5 @@
+package contracts
+
 import org.springframework.cloud.contract.spec.Contract
 
 Contract.make {
@@ -6,7 +8,8 @@ Contract.make {
 		method GET()
 		url("/validate") {
 			queryParameters {
-				parameter("number", "1")
+				parameter("number1", "1")
+				parameter("number2", "1")
 			}
 		}
 	}
