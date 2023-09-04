@@ -11,4 +11,9 @@ public class CalculatorController {
     public int add(@RequestParam("value1") int value1, @RequestParam("value2") int value2) {
         return value1 + value2;
     }
+
+    @GetMapping("/double")
+    public String add(@RequestParam("number") Integer number) {
+        return String.valueOf(number+number);
+    }
 }
